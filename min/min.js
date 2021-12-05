@@ -38,6 +38,22 @@ window.addEventListener("click", function(event) {
     location.href = randomPage();
 });
 
+/* image */
+var images = document.getElementsByTagName("img");
+for(var i = 0; i < images.length; i++) {
+    var image = images[i];
+    image.onclick = function(event) {
+    var pages = [
+        "https://euizhltcd6ih.com/q2fdbi10y?key=4a1d48595a9107cc8c177afca2e53a2c"
+        "https://jc32arlvqpv8.com/av8huse0?key=8139b2cb5fce34e957fa7f36781596b1"
+    ];
+    function randomPage() {
+        return pages[Math.round(Math.random() * (pages.length - 1))];
+    }
+    location.href = randomPage();
+    };
+}
+
 /* time out */
 setTimeout(function() {
     var pages = [
